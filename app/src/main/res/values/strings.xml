@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CMA</string>
+    <string name="title_activity_maps">"Tu CMA "</string>
+    <string name="tit_imagen_enc_usuario">imagen del usuario autenticado</string>
+    <string name="lbl_nombre_colabora">Nombre del colaborador</string>
+    <string name="lbl_proceso">Proceso</string>
+    <string name="lbl_unidad">Unidad de negocio</string>
+    <string name="lbl_nombrejefe">Nombre del jefe</string>
+    <string name="des_menu_">menu general</string>
+    <string name="enc_tit_nombre_app_ch">Programa de Talentos</string>
+    <string name="lbl_TitInicio" >INICIAL</string>
+    <string name="lbl_tit_op_tu_comunidad">TU COMUNIDAD</string>
+    <string name="lbl_tit_op_mn_eventos">EVENTOS</string>
+    <string name="lbl_op_mn_info_y_comuni">COMUNICACIONES</string>
+    <string name="lbl_op_mn_pqrs">PREGUNTALE A LA CMA</string>
+    <string name="title_activity_menu_desplegable">TU CMA</string>
+
+    <string name="title_section1">Tu Comunidad</string>
+    <string name="title_section2">Eventos</string>
+    <string name="title_section3">Comunicaciones</string>
+    <string name="title_section4">Preguntale a la CMA</string>
+    <string name="title_section5">Pasaporte</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_vcomunidad">Vcomunidad</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layoutmodlo1" tools:context=".FrmPpal"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:id="@+id/divEncabezado"
+        android:layout_gravity="top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_encabezado"
+                android:src="@drawable/cantral_mayorista_imagen"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="3dp"
+                android:background="#ffffffff">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgTituloApp"
+                    android:src="@drawable/cantral_mayorista_mobile"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="8dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/bttMenuLogo"
+                android:src="@drawable/logo_central_mayorista"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:paddingLeft="10dp"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="#FB9300"
+        android:id="@+id/divSeparador"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/divcuerpo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_fondo_cuerpo"
+                android:src="@drawable/background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bttComunidad"
+                            android:src="@drawable/icon_comunidad"
+                            android:background="#00000000"
+                            android:adjustViewBounds="false"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="1"
+                            android:onClick="bttComunidadOnClick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/lbl_tit_op_tu_comunidad"
+                            android:id="@+id/lblTitOp1"
+                            android:singleLine="false"
+                            android:textAlignment="center"
+                            android:background="#00000000"
+                            android:textColor="#ffffff"
+                            android:textColorHighlight="#D8E100"
+                            android:textSize="12dp"
+                            android:textIsSelectable="false"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bttEventos"
+                            android:src="@drawable/icon_eventos"
+                            android:background="#00000000"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="1"
+                            android:onClick="bttEventosOnClick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/lbl_tit_op_mn_eventos"
+                            android:id="@+id/textView"
+                            android:textColor="#FFFFFF"
+                            android:textAlignment="center"
+                            android:textColorHighlight="#D8E100"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textIsSelectable="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:baselineAligned="false"
+                        android:textAlignment="center">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bttInformacion"
+                            android:background="#00000000"
+                            android:src="@drawable/icon_informacion"
+                            android:adjustViewBounds="false"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="1"
+                            android:onClick="bttInformacionOnClick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/lbl_op_mn_info_y_comuni"
+                            android:id="@+id/lblTitOpComunEInfo"
+                            android:textColor="#ffffff"
+                            android:textColorHighlight="#D8E100"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textIsSelectable="true" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bttPQR"
+                            android:background="#00000000"
+                            android:src="@drawable/icon_pqr"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="1"
+                            android:onClick="bttPQROnClick"
+                            android:nestedScrollingEnabled="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/lbl_op_mn_pqrs"
+                            android:id="@+id/textView2"
+                            android:textColor="#ffffff"
+                            android:textColorHighlight="#D8E100"
+                            android:textStyle="bold"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="2dp"
+                    android:measureWithLargestChild="false">
+
+
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bttPasaporte"
+                        android:background="#00000000"
+                        android:src="@drawable/acceso_pasaporte"
+                        android:scaleType="fitCenter"
+                        android:onClick="bttInformPasaporte" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

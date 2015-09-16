@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="top"
+    android:baselineAligned="false"
+    android:paddingBottom="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="none"
+            android:padding="2dp"
+            android:background="#9BBD17"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:id="@+id/imgNoticia"
+                android:src="@drawable/img_noticia_no_foto"
+                android:background="#00000000"
+                android:adjustViewBounds="false"
+                android:layout_weight="1"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/lblTituloNoticia"
+                    android:text="Titulo Noticia"
+                    android:gravity="left"
+                    android:textSize="13dp"
+                    android:textColor="#fefffd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Detalle de la noticia "
+                    android:id="@+id/lblDetalleNoticia"
+                    android:gravity="top|left|fill"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:padding="2dp"
+            android:background="#c5c5d1"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="top|left">
+
+                <ImageButton
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/btnComentar"
+                    android:src="@drawable/img_comentario"
+                    android:scaleType="fitXY"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:tint="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_gravity="top|right">
+
+                <ImageButton
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/bttAmigos"
+                    android:src="@drawable/img_amigos"
+                    android:adjustViewBounds="false"
+                    android:scaleType="fitXY"
+                    android:background="#00000000"
+                    android:paddingRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:tint="#ffffff" />
+
+                <ImageButton
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/bttCompartir"
+                    android:src="@drawable/img_compartir"
+                    android:background="#00000000"
+                    android:scaleType="fitXY"
+                    android:paddingRight="5dp"
+                    android:tint="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
